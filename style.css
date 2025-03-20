@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{  
+    font-family: sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: 17% 75% 8% ; 
+    margin:0px;padding:0px;  
+    background-color: black; 
+}
+.nameboard p{
+    color:rgb(241, 238, 238);
+     padding:15px 0px 0px; 
+    font-size: 15px;
+     margin:0px 0px 0px 15px;  
+}
+.searchbar input{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color:white;
+    padding: 15px; 
+    font-size: 15px;
+}
+.searchbar input:focus{
+   outline:none;
+}
+.searchbar{
+  color: rgb(114, 112, 112);
+  background-color: hsl(0, 0%, 18%);
+}
+.signout{
+    padding: 10px;
+    margin-top: 10px;
+}
+.signout a{
+    text-decoration: none;
+    color:rgb(172, 169, 169);
+    font-size: 13px;
+}
+.navbar{
+    background-color: rgb(240, 241, 243);
+    width:272px;
+    border-right:1px solid rgb(226, 222, 222);
+    height :93.7%;
+    position: fixed;
+}
+.navbar ul{
+   margin:13px 0px 5px 5px;
+}
+.navbar li{
+    list-style-type: none;
+    padding:13px;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-family: sans-serif;
+}
+.product{
+    border: 1px solid rgb(228, 225, 225);
+    margin:50px 0px 0px 300px;
+    width:80%;
+}
+.prohead {
+    display:flex;
+    background-color: rgb(245, 243, 243);
+    width:100%;
+    border-radius: 5px; 
+}
+.step1{ padding: 15px;
+   width:20%;
+}
+.step2{ width:60%;
+}
+.step3{ width:15%
+}
+#addbtn{  background: transparent;
+    padding:5px;
+    border-radius: 3px;
+    border:1px solid black;
+    margin:10px 10px 5px 170px;
+}
+#addbtn:hover{
+    background-color: black;
+    color: white;
+}
+#addbtn:focus{
+    border: 3px solid rgb(189, 186, 186);
+}
+.protable{ display: flex;
+    width:80%;
+}
+.boxheading table{  width:1280px;
+    border-bottom: 1px solid rgb(223, 220, 220);
+    font-family: sans-serif;}
+.boxheading table,th,td{
+    border-collapse: collapse;
+}
+.boxheading th{ padding:5px 3px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.boxheading td{
+    padding: 4px 1px;
+}
+.boxheading tr{
+    border-bottom: 1px solid rgb(223, 220, 220);
+}
+.funtable tr:hover{
+    background-color: rgb(245, 243, 243);
+}
+#editbtn{
+   background-color: black;
+   color:white;
+   padding:7px;
+   margin:5px;
+   border-radius: 5px;
+}
+ #delbtn{
+    background: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding:7px;
+    color:red;
+ } 
+#newdesdiv{
+    display: flex;
+    flex-direction: column;
+} 
+#hidenrow{
+    display: none;
+}
+#part1{
+    width:40%;
+    padding: 25px;
+}
+#part2{
+    width: 60%;
+}
+#drillbtn{
+    background: transparent;
+    border:none;
+    margin:5px;
+ }
+ /* .drilldown{
+    display:flex;
+    width:100%
+ }
+ #drilltd{
+    position: absolute;
+ } 
+ #hiddentd{
+    display: none;
+    position:absolute;
+ }  */
+ .down1{
+    width:50%;
+    padding:20px 80px ;
+    color: gray;
+    line-height: 1.6;
+    font-size: 15px;
+    letter-spacing: 1px;
+ }
+ .down2{
+    width:50%;
+    height:150px;
+ }
+ .fun1{
+    display: flex;
+ }
+ /* second form */ 
+.addcontai,.editcontai {
+    background-color: black;
+    opacity: 0.7;
+    width:100%;
+    height:100%;
+    top:0;
+    position: absolute;
+    z-index: 1;
+     display: none;  
+}
+.addform,.editform{
+    width:31%;
+    height:77%;
+    top:30;
+    left:600;
+    background-color: white;
+    opacity: 1.0;
+    border-radius: 5px;
+    z-index:2;
+    position:absolute;
+    display:none;
+}
+.addhead,.edithead{
+    display: flex;
+    width:100%;
+    border-bottom: 1px solid rgb(172, 170, 170);
+}
+.addh1,.edith1{
+    width:70%;
+    padding:17px 15px 13px;
+}
+.addh2,.edith2{
+    width:30%;
+    text-align: right;  
+}
+.addh2 button,.edith2 button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+     margin:13px 15px 0px;
+}
+.addh2 button:focus,.edith2 button:focus{
+    border: 4px solid rgb(110, 180, 228);
+    border-radius: 5px;
+}
+.addhead2,.edithead2{
+    padding:10px;
+    border-bottom: 1px solid rgb(172, 170, 170);
+}
+.addhead2 label,.edithead2 label{
+    padding: 15px 15px 0px 15px;
+}
+.dd,.dd1{
+    margin-top: 8px;
+    padding-bottom:29px;
+}
+.editpicdiv{
+    display:flex;
+}
+.pic1{
+    width:60%;
+}
+.pic2{
+    width:40%;
+}
+.pic2 .orgpic .upload input{
+    display: none;
+} 
+.pic2 .orgpic .upload {
+   position: relative;
+   /* bottom :-147px; */
+   left : 18px;
+   background: rgba(0,0,0,0.3);
+   justify-content: center;
+   text-align: center;
+   cursor: pointer;
+   padding: 0px;
+   margin:0px;
+   width:69%;
+   height:30px;
+   display: inline-block;
+}
+#imgboder{
+    border:1px solid rgb(218, 215, 215);
+    display: inline-block;
+    /* margin-top: -30px; */
+    margin-left: 17px;
+    overflow: hidden;
+    position: relative;
+}
+/* .orgpic{
+    display: inline-block;
+} */
+.addhead2 input,select,.edithead2 input,select{
+    padding:9px;
+    width:95%;
+    margin:0px 10px;
+    border:1px solid rgb(172, 170, 170);
+    border-radius: 5px;
+}
+#code{
+    background-color:rgb(233, 230, 230) ;
+}
+.addhead2 input:focus, select:focus,.edithead2 input:focus, select:focus{
+    outline: 4px solid rgb(110, 180, 228);
+    border-radius: 5px;
+}
+.footer,.editfooter {
+   display: flex;
+}
+.foot1,.editfoot1{
+    padding:10px 5px;
+    text-align: right;
+    width:85%;
+}
+.foot2,.editfoot2{
+    padding:10px 5px;
+    text-align: left;
+    width:15%;
+}
+#closebtn{
+    padding: 10px 12px;
+    background-color: rgb(172, 171, 171);
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size: 15px;
+}
+#closebtn:focus{
+    border:3px solid rgb(180, 178, 178);
+}
+#closebtn:hover{
+    background-color:rgb(80, 79, 79);
+}
+#addingbtn,#updatebtn{
+    padding: 10px 12px;
+    background-color: rgb(136, 165, 219);
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size: 15px;
+}
+.error{
+    color:red;
+    margin:5px 10px;
+    font-size: 10px;
+}
+#error_title,#errorchoose,#errorprice{
+    display: none;
+}
